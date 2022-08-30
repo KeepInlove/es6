@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //ES6 允许按照一定模式从数组和对象提取值，对变量进行赋值
+    //这波称为解构赋值
+    //1.数组对解构
+    const F4=['zs','ls','we','ww'];
+    let [a,b,c,d]=F4
+    console.log(a)
+    console.log(b)
+    console.log(c)
+    console.log(d)
+    //2.对象的解构
+    const person={
+        name:'zhao',
+        age:'18',
+        skill:function () {
+            console.log('回天波')
+        }
+    };
+    let {name,age,skill}=person
+    console.log(name);
+    console.log(age);
+    console.log(skill)
+    skill();
+</script>
+</body>
+</html>
