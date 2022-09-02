@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rest参数</title>
+</head>
+<body>
+<script>
+  //es5获取实参的方式
+  // function data() {
+  //     console.log(arguments)
+  // }
+  // data('白','娇','思')
+//rest参数
+  function data(...args) {
+      console.log(args) //filter some every map
+  }
+  data('白','娇','思')
+  //rest 参数必须放到参数最后
+  function fn(a,b,...args) {
+      console.log(a)
+      console.log(b)
+      console.log(args)
+  }
+  fn(1,2,3,4,5,6)
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<script >
+    //1.数组合并
+    const a=[1,2,3];
+    const b=[4,5,3];
+    const c=[...a,...b]
+    console.log(c)
+    //2.数组克隆
+
+    const  d=['a','b','c']
+    const e=[...d] //浅拷贝
+    console.log(e)
+    //3.将伪数组转化为真数组
+    const divs=document.querySelectorAll('div')
+    const divarr=[...divs]
+    console.log(divs)
+    console.log(divarr)
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+        background-color: #58a;
+    }
+  </style>
+</head>
+<body>
+<div id="ad">
+
+</div>
+</body>
+<script>
+    let ad=document.getElementById('ad')
+    //绑定事件
+    ad.addEventListener('click',function () {
+
+        //定时器
+        //箭头函数是静态对，指向声明所在的
+        setTimeout(()=>{
+            this.style.background='pink';
+        },2000)
+    })
+    const arr=[1,6,9,10,100,25]
+    // const res=arr.filter(function (item) {
+    //     if (item%2===0){
+    //         return true;
+    //     }else {
+    //         return false;
+    //     }
+    // })
+    //箭头函数适合与this无关的回调函数，定时器，数组调方法回调
+    //箭头函数不适合与this有关的回调，事件回调，对象的方法
+    const res=arr.filter(items=>items%2===0)
+    console.log(res)
+</script>
+</html>

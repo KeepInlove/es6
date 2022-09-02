@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s=Symbol();
+    console.log(s,typeof s);
+    let s2=Symbol('1');
+    let s3=Symbol('1');
+    console.log(s2===s3);
+    //Symbol.for创建
+    let s4=Symbol.for('1');
+    let s5=Symbol.for('1');
+    console.log(s4===s5);
+    //不能与其他数据类型进行运算
+    //u undefined
+    //s string Symbol
+    //o object
+    //n null
+    //b boolean
+</script>
+</body>
+</html>
